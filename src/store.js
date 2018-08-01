@@ -5,7 +5,8 @@ import { persistReducer, persistStore } from 'redux-persist'
 import { routerMiddleware } from 'react-router-redux'
 
 import apiMiddleware from './middleware';
-import rootReducer from './reducers'
+import rootReducer from './reducers';
+
 
 export default (history) => {
   const persistedFilter = createFilter(
